@@ -8,11 +8,12 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Creación de Personajes de Fairy Tail</title>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
     </head>
     <body>
         <?php
-        echo "<h1>Hola Mundo</h1>";
-        echo "<h2>Hola Mundo</h2>";
+        include 'library.php';
+        generar_pj();
         ?>
     </body>
 </html>
