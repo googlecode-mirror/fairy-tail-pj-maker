@@ -12,8 +12,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include 'library.php';
-        generar_pj();
+        include 'class_pj.php';
+        $pj = new pj;
         ?>
     </body>
 </html>
