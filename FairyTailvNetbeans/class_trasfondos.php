@@ -18,21 +18,35 @@
  */
 
 class class_trasfondos {
+    
+    var $dados_trasfondo = array();
 
     function __construct() {
-        // Esta clase asignará los trasfondos pasivos.
+        // Esta clase asignará los trasfondos pasivos.        
+        $this->generar_trasfondos();
         $this->imprimir_trasfondos();
+    }
+    function generar_trasfondos(){
+        $aleatorio = rand(1,100);
+        array_push ($this->dados_trasfondo, $aleatorio); // El primero no puede repetirse
+        for ($i=1; $i<6; $i++){
+            $aleatorio = rand(1,100);
+            while (in_array($aleatorio, $this->dados_trasfondo)){ // Mientras esté, voy tirando
+                $aleatorio = rand(1,100);
+            }
+            array_push ($this->dados_trasfondo, $aleatorio); // Lo meto en el array
+        }
     }
     function imprimir_trasfondos(){
         echo "<h2>Trasfondos Pasivos</h2>";
         echo (
                 "<ul>"
-                . "<li>Trasfondo 1</li>"
-                . "<li>Trasfondo 2</li>"
-                . "<li>Trasfondo 3</li>"
-                . "<li>Trasfondo 4</li>"
-                . "<li>Trasfondo 5</li>"
-                . "<li>Trasfondo 6</li>"
+                . "<li>Trasfondo 1: " . $this->dados_trasfondo[0] . "</li>"
+                . "<li>Trasfondo 2: " . $this->dados_trasfondo[1] . "</li>"
+                . "<li>Trasfondo 3: " . $this->dados_trasfondo[2] . "</li>"
+                . "<li>Trasfondo 4: " . $this->dados_trasfondo[3] . "</li>"
+                . "<li>Trasfondo 5: " . $this->dados_trasfondo[4] . "</li>"
+                . "<li>Trasfondo 6: " . $this->dados_trasfondo[5] . "</li>"
                 . "</ul>");     
     }
 }

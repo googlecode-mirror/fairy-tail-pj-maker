@@ -44,7 +44,7 @@ class class_caracteristicas {
     function car_gen(){
         $car_array = array();
         for ($i=0; $i<=5; $i++){
-            array_push ($car_array, rand (3,10));
+            array_push ($car_array, rand(3,10));
         }
         rsort($car_array);
         $this->car_sel($car_array, $this->tipo_pj);
