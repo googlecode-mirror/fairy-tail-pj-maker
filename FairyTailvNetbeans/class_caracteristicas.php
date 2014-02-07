@@ -1,7 +1,11 @@
 <?php
 
 class class_caracteristicas {
-    
+/**
+ * Esta clase asignará las características del personaje
+ *
+ * @author usuario
+ */    
     // Atributos
     var $destreza;
     var $constitucion;
@@ -63,7 +67,7 @@ class class_caracteristicas {
     }
     
     function imprimir_pj(){
-        echo ("<h1>Características</h1>");
+        echo ("<h2>Características</h2>");
         echo ("<ul>");
         echo ("<li>Destreza: " . $this->destreza) . "</li>";
         echo ("<li>Constitución: " . $this->constitucion) . "</li>";

@@ -8,9 +8,11 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title>Creación de Personajes de Fairy Tail</title>
-        <link rel="stylesheet" type="text/css" href="/styles/style.css">
+        <link rel=stylesheet type="text/css" href="CSS/style.css">
     </head>
     <body>
+        <div>
+            <h1>Creador de Pjs de Fairy Tail</h1>
         <?php
         include 'class_caracteristicas.php';
         include 'class_trasfondos.php';
@@ -21,5 +23,6 @@ and open the template in the editor.
         // $levear = new levear();
         // $hechizos = new hechizos();
         ?>
+        </div>
     </body>
 </html>
