@@ -6,9 +6,11 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link href='http://fonts.googleapis.com/css?family=Artifika' rel='stylesheet' type='text/css'>
         <meta charset="UTF-8">
         <title>Creación de Personajes de Fairy Tail</title>
         <link rel=stylesheet type="text/css" href="CSS/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
         <div>

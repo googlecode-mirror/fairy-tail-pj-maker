@@ -11,7 +11,7 @@ body  {
 }
 
 h1{
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Artifika;
     font-size: 1.1em;
     text-transform: uppercase;
     background-color: black;
@@ -24,7 +24,7 @@ h1{
 
 h2{
     font-size: 1.1em;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Artifika, Verdana, Geneva, sans-serif;
     font-weight: 300;
     margin-bottom: .2em;
     margin-top: .5em;
@@ -34,5 +34,6 @@ h2{
 }
 
 ul{
+    font-family: Verdana, Geneva, sans-serif;
     list-style: none;
 }

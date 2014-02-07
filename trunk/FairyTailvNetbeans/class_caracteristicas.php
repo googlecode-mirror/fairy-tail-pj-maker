@@ -42,7 +42,7 @@ class class_caracteristicas {
                 $this->car_distancia($tiradas); break;
             case 'Mental':
                 $this->car_mental($tiradas); break;
-            default: echo ("<h1>Se ha producido un terrible error</h1>"); break;
+            default: echo ("<p>Se ha producido un terrible error...</p>"); break;
         }
     }
     
