@@ -12,8 +12,14 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include 'class_pj.php';
-        $pj = new pj;
+        include 'class_caracteristicas.php';
+        include 'class_trasfondos.php';
+        // include 'class_levear.php';
+        // include 'class_hechizos.php';
+        $caracteristicas = new class_caracteristicas();
+        $trasfondos = new class_trasfondos();
+        // $levear = new levear();
+        // $hechizos = new hechizos();
         ?>
     </body>
 </html>
