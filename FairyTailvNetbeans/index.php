@@ -12,17 +12,19 @@ and open the template in the editor.
     </head>
     <body>
         <div>
-            <h1>Creador de Pjs de Fairy Tail</h1>
-        <?php
-        include 'class_caracteristicas.php';
-        include 'class_trasfondos.php';
-        // include 'class_levear.php';
-        // include 'class_hechizos.php';
-        $caracteristicas = new class_caracteristicas();
-        $trasfondos = new class_trasfondos();
-        // $levear = new levear();
-        // $hechizos = new hechizos();
-        ?>
+            <h1>¡Crea un Personaje!</h1>
+        </div>
+        <div>            
+            <form action="main.php" method="post">                
+                <p>
+                    <select name="tipo_pj">
+                        <option>Melero</option>
+                        <option>Distancia</option>
+                        <option>Mental</option>
+                    </select>
+                    <input type="submit" value="¡Crear!" />
+                </p>
+            </form>            
         </div>
     </body>
 </html>
