@@ -12,10 +12,12 @@ class class_caracteristicas {
     var $inteligencia;
     var $presencia;
     var $sentidos;
+    var $tipo_pj;
         
     // La función generar_pj lo que hace es llevar el hilo principal de la generación de personajes.
-    function __construct(){
-        $this->car_gen();
+    function __construct($tipo_pj){
+        $this->tipo_pj=$tipo_pj;
+        $this->car_gen($tipo_pj);
         $this->imprimir_pj();
     }
 
@@ -27,18 +29,18 @@ class class_caracteristicas {
             array_push ($car_array, rand (3,10));
         }
         rsort($car_array);
-        $this->car_sel($car_array);
+        $this->car_sel($car_array, $this->tipo_pj);
     }
 
-    function car_sel($tiradas){
+    function car_sel($tiradas, $tipo_pj){
         // Esta función repartirá las características según el tipo de personaje
-        $tipo_pj='melero'; // En principio generaré un melé, ya agregaré un formulario al index
+        //$tipo_pj='melero'; // En principio generaré un melé, ya agregaré un formulario al index
         switch ($tipo_pj) {
-            case 'melero':
+            case 'Melero':
                 $this->car_melero($tiradas); break;
-            case 'distancia':                
+            case 'Distancia':                
                 $this->car_distancia($tiradas); break;
-            case 'mental':
+            case 'Mental':
                 $this->car_mental($tiradas); break;
             default: echo ("<h1>Se ha producido un terrible error</h1>"); break;
         }
