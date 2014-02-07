@@ -11,22 +11,22 @@ class pj {
         
     // La función generar_pj lo que hace es llevar el hilo principal de la generación de personajes.
     function __construct(){
-        $tiradas = $this->car_gen();
-        $this->car_sel($tiradas);
+        $this->car_gen();
         $this->imprimir_pj();
     }
 
     // La función char_gen genera seis tiradas y las ordena de mayor a menor.
     // Sólo hay cinco características, el motivo de hacer esto es desechar la menor.
-    private function car_gen(){
+    function car_gen(){
         $car_array = array();
         for ($i=0; $i<=5; $i++){
             array_push ($car_array, rand (3,10));
         }
-        return rsort ($car_array);
+        rsort($car_array);
+        $this->car_sel($car_array);
     }
 
-    private function car_sel($tiradas){
+    function car_sel($tiradas){
         // Esta función repartirá las características según el tipo de personaje
         $tipo_pj='melero'; // En principio generaré un melé, ya agregaré un formulario al index
         switch ($tipo_pj) {
