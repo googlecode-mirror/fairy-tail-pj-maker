@@ -12,7 +12,7 @@ class class_trasfondos {
     }
     
     function imprimir_trasfondos(){
-        echo ("<h1>Trasfondos Pasivos</h1>");
+        echo ("<h2>Trasfondos Pasivos</h2>");
         echo ("<ul>"
                 . "<li>Trasfondo 1</li>"
                 . "<li>Trasfondo 2</li>"
