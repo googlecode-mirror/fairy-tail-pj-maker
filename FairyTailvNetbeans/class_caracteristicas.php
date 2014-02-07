@@ -1,6 +1,6 @@
 <?php
 
-class pj {
+class class_caracteristicas {
     
     // Atributos
     var $destreza;
