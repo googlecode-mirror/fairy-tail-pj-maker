@@ -1,0 +1,1 @@
+Para el juego de rol Fairy Tail
